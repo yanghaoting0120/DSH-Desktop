@@ -1,0 +1,25 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+out/
+
+# DSH runtime
+.dsh/
+.agents/
+skills-lock.json
+ocr-uploads/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
