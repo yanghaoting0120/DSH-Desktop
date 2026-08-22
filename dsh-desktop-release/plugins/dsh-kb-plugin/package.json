@@ -1,0 +1,33 @@
+{
+  "name": "dsh-kb",
+  "version": "0.1.0",
+  "description": "DSH 知识中心插件：在会话标题栏添加「知识库」视图标签，以 AutoBox 风格展示知识库/技能/记忆/任务（host 面提供文件系统 API，client 面渲染视图）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}
